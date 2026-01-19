@@ -61,7 +61,7 @@ const restaurantList = [
       name: "Pizza Hut",
       cloudinaryImageId: "2b4f62d606d1b2bfba9ba9e5386fabb7",
       locality: "2nd Stage",
-      areaName: "BTM Layout",
+      areaName: "Khairtabad",
       costForTwo: "₹350 for two",
       cuisines: ["Pizzas"],
       avgRating: 4.1,
@@ -77,7 +77,7 @@ const restaurantList = [
       name: "La Pino'z Pizza",
       cloudinaryImageId: "lczhp9lptdzbqn09nfns",
       locality: "2nd Stage",
-      areaName: "BTM Layout",
+      areaName: "Masab Tank",
       costForTwo: "₹250 for two",
       cuisines: ["Pizzas", "Pastas", "Italian", "Desserts", "Beverages"],
       avgRating: 4,
@@ -93,7 +93,7 @@ const restaurantList = [
       name: "The Belgian Waffle Co.",
       cloudinaryImageId: "5116a385bac0548e06c33c08350fbf11",
       locality: "2nd Stage",
-      areaName: "BTM 2nd Stage",
+      areaName: "Banjara Hills",
       costForTwo: "₹200 for two",
       cuisines: ["Waffle", "Desserts", "Ice Cream"],
       avgRating: 4.3,
@@ -200,7 +200,7 @@ const restaurantList = [
       name: "California Burrito",
       cloudinaryImageId: "p57honbbzdgf7tyt2vay",
       locality: "5th Phase",
-      areaName: "JP Nagar",
+      areaName: "Koramangala",
       costForTwo: "₹250 for two",
       cuisines: [
         "Mexican",
@@ -224,7 +224,7 @@ const restaurantList = [
       name: "Great Indian Khichdi by EatFit",
       cloudinaryImageId: "6e44fd7f1e5cd9967edfe47c10247671",
       locality: "2nd Stage",
-      areaName: "BTM Layout",
+      areaName: "Marathahalli",
       costForTwo: "₹200 for two",
       cuisines: [
         "Home Food",
@@ -252,7 +252,7 @@ const restaurantList = [
       cloudinaryImageId:
         "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/23/8162aab2-4ccd-431e-8163-ad18749b95f5_643652.JPG",
       locality: "16TH MAIN",
-      areaName: "BTM",
+      areaName: "Yelahanka",
       costForTwo: "₹250 for two",
       cuisines: ["Healthy Food", "Salads", "Keto", "Snacks"],
       avgRating: 4.4,
@@ -302,7 +302,7 @@ const restaurantList = [
       name: "Kwality Walls Frozen Dessert and Ice Cream Shop",
       cloudinaryImageId: "npp2m7tuszixwcc69pqd",
       locality: "2nd Stage",
-      areaName: "Btm Layout",
+      areaName: "Whitefield",
       costForTwo: "₹300 for two",
       cuisines: ["Desserts", "Ice Cream", "Ice Cream Cakes"],
       avgRating: 4.6,
@@ -319,7 +319,7 @@ const restaurantList = [
       name: "NIC Ice Creams",
       cloudinaryImageId: "5bbe809ee274743ba5e09eab110cd813",
       locality: "MICO Employees Grinirman",
-      areaName: "BTM layout",
+      areaName: "HSR Layout",
       costForTwo: "₹120 for two",
       cuisines: ["Ice Cream", "Desserts"],
       avgRating: 4.9,
@@ -337,7 +337,7 @@ const restaurantList = [
       cloudinaryImageId:
         "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/24/11e95f9e-ba33-472c-85ae-ed6d5c289992_590119.JPG",
       locality: "1st  Stage",
-      areaName: "BTM Layout",
+      areaName: "Bellandur",
       costForTwo: "₹299 for two",
       cuisines: ["Bakery", "Desserts", "Beverages", "Snacks"],
       avgRating: 4.3,
@@ -440,9 +440,10 @@ const RestaurantCard = ({ restaurantData }) => {
         <div>
           <h3> {avgRating} ⭐</h3>
           <h3>{deliveryTime} mins</h3>
+          <h3>{costForTwo}</h3>
         </div>
         <h3>{cuisines.join(", ")}</h3>
-        <h3>{costForTwo}</h3>
+        <h3>{areaName}</h3>
       </div>
     </div>
   );
