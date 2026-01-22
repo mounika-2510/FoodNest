@@ -61,7 +61,7 @@ body {
   font-weight: 500;
 }
 .search::after {
-  content: " 🔍";
+  /* content: " 🔍"; */
   font-size: 18px;
 }
 /* Res container (Grid) */
